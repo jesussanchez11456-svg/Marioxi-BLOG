@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Bitácora de Marioxi | El Arte de Escribir</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Import Map to resolve React dependencies in the browser -->
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@18.2.0",
+          "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+          "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime"
+        }
+      }
+    </script>
+    
+    <!-- Fuentes: Playfair Display (Títulos Clásicos) y Lora (Cuerpo de texto legible) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Lora', 'serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            colors: {
+              // Paleta Académica Premium
+              paper: '#fcfbf9',
+              burgundy: {
+                900: '#4a0404', // Footer background / Textos muy oscuros
+                800: '#7f1d1d', // Botones principales / Textos destacados
+                700: '#991b1b', // Iconos
+                50: '#fef2f2',  // Fondos hover suaves
+              },
+              gold: {
+                600: '#b45309', // Bordes oscuros
+                500: '#d97706', // Bordes decorativos
+                400: '#fbbf24', // Detalles brillantes
+                100: '#fef3c7', // Fondos de etiquetas
+              },
+              ink: {
+                900: '#1c1917',
+                800: '#292524',
+                700: '#44403c',
+                600: '#57534e',
+                500: '#78716c',
+                400: '#a8a29e',
+              }
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Smooth scrolling global */
+      html { scroll-behavior: smooth; }
+    </style>
+  </head>
+  <body class="bg-[#fcfbf9] text-stone-800 antialiased font-sans">
+    <div id="root"></div>
+  </body>
+</html>
