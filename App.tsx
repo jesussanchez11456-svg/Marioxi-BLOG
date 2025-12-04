@@ -58,7 +58,7 @@ const samplePosts: BlogPost[] = [
     publishDate: 'Octubre 25, 2025',
     readTime: 'Lectura: 12 min',
     author: { name: 'Marioxi Herrera', role: 'Editora', avatarUrl: 'https://ui-avatars.com/api/?name=Marioxi+Herrera&background=292524&color=fff' },
-    imageUrl: 'https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&q=80&w=800',
+    imageUrl: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80&w=800',
     mainReference: 'Revista OGMA. (2025). Artículos y Ensayos.',
     externalUrl: 'https://revistaogma.com/index.php/home/article/download/2/5/338'
   },
